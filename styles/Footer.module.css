@@ -1,0 +1,13 @@
+.footer {
+    background: #272727;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+
+.footer__text {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #DAAF2A;
+    font-size: .6rem;
+}

@@ -1,4 +1,4 @@
-import styles from '../styles/Header.module.css'
+import styles from '../../styles/Header.module.css'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';

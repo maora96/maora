@@ -1,13 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Icon from '../assets/icon.png'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
-import {faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 
-import Header from '../components/Header';
+import Header from '..//components/sections/Header';
+import Hero from '../components/sections/Hero';
+import About from '../components/sections/About';
+import Projects from '../components/sections/Projects';
+import Skills from '../components/sections/Skills';
+import Contact from '../components/sections/Contact';
+import Footer from '../components/sections/Footer';
 
 export default function Home() {
   return (
@@ -20,34 +19,18 @@ export default function Home() {
 
       <Header/>      
 
-    <section>
-      <div>
-        <Image src={Icon}/>
-      </div>
+      <Hero/>
 
-      <h2>Marina Oliveira</h2>
-      <h3>Full Stack Web Developer</h3>
+      <About/>
 
-      <p>Desenvolvedora full-stack com foco no front-end e em tecnologias baseadas em JavaScript.</p>
+      <Projects/>
 
-      <div>
-        <a href="">CV</a>
-        <a href="">Projectos</a>
-      </div>
+      <Skills/>
 
-      <div>
-      <FontAwesomeIcon
-        icon={faLinkedinIn}
-        style={{ fontSize: 15, color: "#DAAF2A" }}
-      />
+      <Contact/>
 
-      <FontAwesomeIcon
-        icon={faGithubAlt}
-        style={{ fontSize: 15, color: "#DAAF2A" }}
-      />
-       
-      </div>
-    </section>
+      <Footer/>
+    
     </>
   )
 }

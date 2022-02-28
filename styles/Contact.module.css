@@ -1,0 +1,105 @@
+.contact {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__title {
+    color: #2DAE81;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: .6rem;;
+}
+
+.contact__divider {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px dashed #DAAF2A;;
+    margin-bottom: 1rem;;
+}
+
+.contact__text {
+    padding: .6rem 1.5rem;
+    color: #EDEDED;
+    text-align: center;
+    font-size:.9rem;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    margin-bottom: 1rem;
+}
+
+.contact__bold {
+    color: #DAAF2A;
+    font-weight: bold;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact__input {
+    outline: none;
+    background: none;
+    border: 1px solid #DAAF2A;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    color:#EDEDED;
+    font-family: 'Jura';
+}
+
+.contact__input::placeholder {
+    color:#EDEDED;
+    font-family: 'Jura';
+}
+
+.contact__textarea {
+    outline: none;
+    background: none;
+    border: 1px solid #DAAF2A;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    color:#EDEDED;
+    font-family: 'Jura';
+}
+
+.contact__textarea::placeholder {
+    color:#EDEDED;
+    font-family: 'Jura';  
+}
+
+.contact__error {
+    color: red;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.contact__label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #DAAF2A;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+.contact__button {
+    outline: none;
+    border: none;
+    background: #DAAF2A;
+    width: 100px;
+    padding: 0.3rem;
+    text-align: center;
+    color: #EDEDED;
+    text-transform: uppercase;
+    font-family: 'Jura';  
+    align-self: flex-end;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
