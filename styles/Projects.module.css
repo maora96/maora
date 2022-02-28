@@ -30,3 +30,23 @@
     line-height: 20px;
     margin-bottom: 1rem;
 }
+
+@media (min-width:768px) {
+
+    .projects__title {
+        margin-bottom: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .projects__text {
+        font-size: 1.3rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-top:1rem;
+        margin-bottom: 2rem;
+    }
+
+    .projects__divider {
+        width: 75%;
+    }
+}

@@ -29,3 +29,22 @@
     line-height: 20px;
     margin-bottom: .5rem;
 }
+
+@media (min-width:768px) {
+    .about {
+        padding: 3rem 9rem;
+    }
+
+    .about__text {
+        font-size:1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .about__title {
+        font-size: 1.5rem;
+    }
+
+    .about__divider {
+        margin-bottom: 1.5rem;
+    }
+}

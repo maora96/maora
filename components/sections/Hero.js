@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
 
+// import CV_PT from '../../data/cv-pt.pdf'
+
 import { useEffect, useState } from 'react';
 
 import getLanguageData from '../../data/language';
@@ -34,7 +36,9 @@ export default function Hero(props) {
             </div>
 
             <div className={styles.hero__buttons_container}>
-                <a href="" className={styles.hero__buttons_container_button}>CV <FontAwesomeIcon icon={faDownload} style={ { fontSize: 15, color: '#DAAF2A'} }/></a>
+                <a href='../../data/cv-pt.pdf' download="cv-pt.pdf" className={styles.hero__buttons_container_button}>CV <FontAwesomeIcon icon={faDownload} style={ { fontSize: 15, color: '#DAAF2A'} }/></a>
+
+                {/* <a href="path_to_file" download="proposed_file_name">Download</a> */}
                 
                 <div className={styles.hero__buttons_container_button_filled} onClick={() =>  props.projectsRef.current.scrollIntoView({behavior: "smooth"})} >Projetos</div>
             </div>

@@ -35,3 +35,8 @@
 }
 
 
+@media (min-width:768px) {
+    .nav__list_item {
+        font-size: 2rem;
+    }
+}

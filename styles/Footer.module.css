@@ -11,3 +11,9 @@
     color: #DAAF2A;
     font-size: .6rem;
 }
+
+@media (min-width:768px) {
+    .footer__text {
+        font-size: .9rem;
+    }
+}

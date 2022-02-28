@@ -71,3 +71,36 @@
     color: #EDEDED;
     text-transform: uppercase;
 }
+
+@media (min-width:768px) {
+    .card {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+
+    .card__title {
+        font-size: 1.5rem;
+    }
+
+    .card__description {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .card__tags {
+        font-size: 1rem;
+    }
+
+    .card__link_filled {
+        font-size: 1.2rem;
+    }
+
+    .card__links {
+        font-size: 1.2rem;
+    }
+
+    .card__description_box {
+        padding: 3rem;
+    }
+}

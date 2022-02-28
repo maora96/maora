@@ -35,3 +35,18 @@
     color: #DAAF2A;
     font-weight: bold;
 }
+
+@media (min-width:768px) {
+    .skills {
+        padding: 3rem 9rem;
+    }
+
+    .skills__text {
+        font-size:1.2rem
+    }
+
+    .skills__title {
+        font-size: 1.5rem;
+    }
+
+}
