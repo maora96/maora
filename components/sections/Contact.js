@@ -2,13 +2,13 @@ import styles from '../../styles/Contact.module.css'
 import { useForm } from "react-hook-form";
 
 
-export default function Contact() {
+export default function Contact(props) {
     const { register, handleSubmit, formState: {errors} } = useForm()
 
     console.log(errors)
     const onSubmit = data => console.log(data)
     return (
-        <section className={styles.contact}>
+        <section ref={props.contactRef}className={styles.contact}>
             <h3 className={styles.contact__title}>Contato</h3>
 
             <hr className={styles.contact__divider}/>

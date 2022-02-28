@@ -5,7 +5,7 @@ import {faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import Card from '../Card';
 
 
-export default function Projects() {
+export default function Projects(props) {
 
     let personalProjects = [
         {
@@ -19,7 +19,7 @@ export default function Projects() {
     let tutorialProjects = []
 
     return (
-        <section className={styles.projects}>
+        <section ref={props.projectsRef} className={styles.projects}>
             <h3 className={styles.projects__title}>Projetos</h3>
 
             <hr className={styles.projects__divider}/>

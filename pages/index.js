@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import { useRef } from 'react';
+
 import Header from '..//components/sections/Header';
 import Hero from '../components/sections/Hero';
 import About from '../components/sections/About';
@@ -7,8 +9,17 @@ import Projects from '../components/sections/Projects';
 import Skills from '../components/sections/Skills';
 import Contact from '../components/sections/Contact';
 import Footer from '../components/sections/Footer';
+import ScrollButton from '../components/ScrollButton';
+
+
 
 export default function Home() {
+  const aboutRef = useRef()
+  const projectsRef = useRef()
+  const skillsRef = useRef()
+  const contactRef = useRef()
+  const headerRef = useRef()
+
   return (
     <>
       <Head>
@@ -17,19 +28,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header/>      
+      <Header headerRef = {headerRef} aboutRef = {aboutRef} projectsRef = {projectsRef} skillsRef = {skillsRef} contactRef = {contactRef} />      
 
       <Hero/>
 
-      <About/>
+      <About aboutRef = {aboutRef}/>
 
-      <Projects/>
+      <Projects projectsRef = {projectsRef}/>
 
-      <Skills/>
+      <Skills skillsRef = {skillsRef}/>
 
-      <Contact/>
+      <Contact contactRef = {contactRef}/>
 
       <Footer/>
+
+      <ScrollButton headerRef = {headerRef}/>
     
     </>
   )

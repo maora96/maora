@@ -1,10 +1,10 @@
 import styles from '../../styles/Skills.module.css'
 
 
-export default function Skills() {
+export default function Skills(props) {
 
     return (
-        <section className={styles.skills}>
+        <section ref={props.skillsRef} className={styles.skills}>
             <h3 className={styles.skills__title}>Tecnologias</h3>
 
             <hr className={styles.skills__divider}/>

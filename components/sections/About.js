@@ -1,10 +1,10 @@
 import styles from '../../styles/About.module.css'
 
 
-export default function About() {
+export default function About(props) {
 
     return (
-        <section className={styles.about}>
+        <section ref={props.aboutRef} className={styles.about}>
             <h3 className={styles.about__title}>Sobre</h3>
 
             <hr className={styles.about__divider}/>

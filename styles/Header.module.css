@@ -14,3 +14,25 @@
     font-size: 1rem;
     font-weight: 600;
 }
+
+.header__ham {
+    margin-left:0.6rem;
+}
+
+.header__switch {
+    display: flex;
+    
+}
+
+.header__switch_option {
+    border: 1px solid #DAAF2A;
+    padding: 0.3rem;
+    color: #EDEDED;
+}
+
+.header__active {
+    background: #DAAF2A;
+    border: none;
+    padding: 0.5rem;
+    color: #EDEDED;
+}

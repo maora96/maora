@@ -1,0 +1,29 @@
+.scroll {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    background: #DAAF2A;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: .5;
+    transition: opacity 200ms;
+}
+
+.scroll__is_active {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    background: #DAAF2A;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 100ms;
+}
