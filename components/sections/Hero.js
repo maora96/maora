@@ -25,7 +25,7 @@ export default function Hero(props) {
     return (
         <section className={styles.hero}>
             <div className={styles.hero__iconbox}>
-                <Image src={Icon} className={styles.hero__icon}/>
+                <Image src={Icon} alt="foto de perfil" className={styles.hero__icon}/>
             </div>
 
             <div>

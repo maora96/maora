@@ -5,13 +5,13 @@ export default function Card({card}) {
 
     return (
         <div className={styles.card}>
-            <Image src={card.img} width="1875" height= "970" layout='responsive' className={styles.card__img}/>
+            <Image src={card.img} alt="cover do projeto" width="1875" height= "970" layout='responsive' className={styles.card__img}/>
             <div className={styles.card__description_box}>
                 <h4 className={styles.card__title}>{card.title}</h4>
                 <p className={styles.card__description}>{card.description_pt}</p>
                 <div className={styles.card__tags_box}>
                 {card.tags.map(tag => {
-                    return  <div className={styles.card__tags}>{tag}</div>
+                    return  <div className={styles.card__tags} key={tag}>{tag}</div>
                 
                 })}
                 </div>
