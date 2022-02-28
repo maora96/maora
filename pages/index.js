@@ -30,7 +30,7 @@ export default function Home() {
 
       <Header headerRef = {headerRef} aboutRef = {aboutRef} projectsRef = {projectsRef} skillsRef = {skillsRef} contactRef = {contactRef} />      
 
-      <Hero/>
+      <Hero projectsRef = {projectsRef}/>
 
       <About aboutRef = {aboutRef}/>
 

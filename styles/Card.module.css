@@ -1,6 +1,7 @@
 .card {
     width: 100%;
     border-radius: 10px 10px 0 0 ;
+    margin-bottom: 3rem;
 }
 
 .card__img {
