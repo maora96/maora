@@ -104,3 +104,17 @@
         padding: 3rem;
     }
 }
+
+@media (min-width:992px) {
+    .card {
+        max-width: 35%;
+    }
+
+    .card__description_box {
+        min-height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}

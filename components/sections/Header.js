@@ -46,7 +46,38 @@ export default function Header(props) {
 
             <h1 className={styles.header__h1}>Maora</h1>
 
-            
+            <ul className={styles.header__list_desktop}>
+                <li className={styles.header__list_item}onClick={ () => {
+                    props.aboutRef.current.scrollIntoView({behavior: "smooth"})
+                    }
+                }>Sobre</li>
+                
+                <li className={styles.header__list_item}onClick={ () => {
+                    props.projectsRef.current.scrollIntoView({behavior: "smooth"})
+                    }
+                }>Projetos</li>
+                
+                <li className={styles.header__list_item} onClick={ () => {
+                    props.skillsRef.current.scrollIntoView({behavior: "smooth"})
+                    }
+                }>Tecnologias</li>
+                
+                <li className={styles.header__list_item} onClick={ () => {
+                    props.contactRef.current.scrollIntoView({behavior: "smooth"})
+                    }
+                }>Contato</li>
+
+                <li className={styles.header__list_item_special}>
+                <div className={language === "pt" ? styles.header__active_desktop : styles.header__switch_option_desktop} onClick={() => {
+                    setLanguage("pt")
+                }}>PT</div>
+                <div className={language === "en" ? styles.header__active_desktop : styles.header__switch_option_desktop} onClick={() => {
+                    setLanguage("en")
+                }}>EN</div>
+                </li>
+
+               
+            </ul>
 
                 
             <FontAwesomeIcon

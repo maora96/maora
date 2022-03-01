@@ -28,6 +28,7 @@ export default function Hero(props) {
                 <Image src={Icon} alt="foto de perfil" className={styles.hero__icon}/>
             </div>
 
+            <div className={styles.hero__content_container}>
             <div>
             <h2 className={styles.hero__title}>Marina Oliveira</h2>
             <h3 className={styles.hero__subtitle}>Full Stack Developer</h3>
@@ -54,6 +55,7 @@ export default function Hero(props) {
                 style={{ fontSize: 25, color: "#DAAF2A" }}
             />
             
+            </div>
             </div>
     </section>
     )

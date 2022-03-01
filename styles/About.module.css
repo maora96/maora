@@ -48,3 +48,30 @@
         margin-bottom: 1.5rem;
     }
 }
+
+@media (min-width:992px) {
+    .about {
+        padding: 0;
+    }
+
+    .about__container {
+        width: 60%;
+        margin: 0 auto;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about__title {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .about__divider {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}

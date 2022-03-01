@@ -50,3 +50,31 @@
     }
 
 }
+
+@media (min-width:992px) {
+    .skills {
+        padding: 0;
+        margin-top:2rem;
+    }
+
+    .skills__container {
+        width: 80%;
+        margin: 0 auto;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .skills__title {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .skills__divider {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}

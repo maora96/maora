@@ -36,25 +36,32 @@ export default function Projects(props) {
 
     return (
         <section ref={props.projectsRef} className={styles.projects}>
-            <h3 className={styles.projects__title}>Projetos</h3>
+            <div className={styles.projects__container}>
+                <h3 className={styles.projects__title}>Projetos</h3>
 
-            <hr className={styles.projects__divider}/>
+                <hr className={styles.projects__divider}/>
 
-            <p className={styles.projects__text}>Projetos criados desde sua concepção até o design e desenvolvimento por mim.</p>
-            
-            {personalProjects.map(project => {
-               return <Card card ={project} key={project.title}/>
-            })}
+                <p className={styles.projects__text}>Projetos criados desde sua concepção até o design e desenvolvimento por mim.</p>
 
-            <h3 className={styles.projects__title}>Avulsos</h3>
+               <div className={styles.projects__card_container}>
+                {personalProjects.map(project => {
+                    return <Card card ={project} key={project.title}/>
+                    })}
+               </div>
 
-            <hr className={styles.projects__divider}/>
+                <h3 className={styles.projects__title}>Avulsos</h3>
 
-            <p className={styles.projects__text}>Projetos criados a partir de tutoriais para aprender tecnologias novas.</p>
+                <hr className={styles.projects__divider}/>
 
-            {tutorialProjects.map(project => {
-               return <Card card ={project} key={project.title}/>
-            })}
+                <p className={styles.projects__text}>Projetos criados a partir de tutoriais para aprender tecnologias novas.</p>
+
+                <div className={styles.projects__card_container}>
+                {tutorialProjects.map(project => {
+                    return <Card card ={project} key={project.title}/>
+                })}
+               </div>
+
+            </div>
         </section>
     )
 }

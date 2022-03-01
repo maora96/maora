@@ -6,7 +6,7 @@ const languages = {
     },
     pt: {
         hero: {
-            description: 'Desenvolvedora full-stack com foco no front-end e em tecnologias baseadas em JavaScript.'
+            description: 'Desenvolvedora full-stack com foco em front-end e em tecnologias baseadas em JavaScript.'
         }
     }
 }
